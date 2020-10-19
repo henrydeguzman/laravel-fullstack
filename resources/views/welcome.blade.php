@@ -5,9 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Full Stack blog</title>
-
-
-
     </head>
     <body>
         <div id="app">
