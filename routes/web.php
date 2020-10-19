@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('/new', [TestController::class, 'controllerMethod']);
+
+// Catch any routes does not match above
+Route::any('{slug}', function(){
     return view('welcome');
 });
